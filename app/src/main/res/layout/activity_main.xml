@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero de pasos: 0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar paso"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar contador"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir al detalle"
+        android:textSize="18sp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPasos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        app:cardBackgroundColor="#0000FF"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:strokeWidth="0dp">
+
+        <!-- El contenido de la tarjeta -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="24dp"
+            android:text="10,000 pasos del dia"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
